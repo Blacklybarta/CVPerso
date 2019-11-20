@@ -1,7 +1,22 @@
+<ion-menu side="start" menuId="first" contentId="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Raccourcis</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="scrollTo(presentation)">Mon CSS</ion-item>
+      <ion-item (click)="scrollTo(diplome)">Mes patterns</ion-item>
+      <ion-item>Mon back</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-        <ion-icon name="desktop"></ion-icon>
+      <ion-icon (click)="openFirst()" name="menu" size="large"></ion-icon>
     </ion-buttons>
     <ion-title>
       Développeur mobile
@@ -9,9 +24,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    <app-presentation></app-presentation><br>
-    <app-diplome></app-diplome>
-  </div>
+<ion-content id="content" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xs="12" size-md="6" size-lg="4">
+        <div #presentation>
+          <app-presentation></app-presentation><br>
+        </div>
+      </ion-col>
+      <ion-col size-xs="12" size-md="6" size-lg="4">
+        <div #diplome>
+          <app-diplome></app-diplome>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
