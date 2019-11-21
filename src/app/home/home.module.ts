@@ -5,8 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { DiplomeComponent } from './diplome/diplome.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { FormationComponent } from './formations/formation.component';
+import { CompetenceComponent } from './competences/competence.component';
 
 @NgModule({
   imports: [
@@ -22,8 +23,9 @@ import { PresentationComponent } from './presentation/presentation.component';
   ],
   declarations: [
     HomePage,
-    DiplomeComponent,
-    PresentationComponent
+    FormationComponent,
+    PresentationComponent,
+    CompetenceComponent
   ]
 })
 export class HomePageModule {}
