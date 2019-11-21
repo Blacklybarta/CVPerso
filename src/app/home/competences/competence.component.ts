@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalAvancePage } from './modal-avance/modal-avance.page';
 
 @Component({
     selector: 'app-competence',
@@ -8,5 +10,13 @@ import { Component } from '@angular/core';
 
 export class CompetenceComponent {
 
-    constructor() { }
+    constructor(public modalController: ModalController) { }
+
+
+    public async presentModalAvance() {
+        const modal = await this.modalController.create({
+          component: ModalAvancePage
+        });
+        return await modal.present();
+      }
 }
