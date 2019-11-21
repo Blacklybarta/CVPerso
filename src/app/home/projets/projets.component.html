@@ -1,0 +1,139 @@
+<ion-card>
+  <img src="assets\icon\projets.jpg" />
+  <ion-card-header>
+    <ion-card-title class="ion-text-center">Mes projets</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-text slot="start">
+          Pro
+        </ion-text>
+        <ion-label class="ion-text-wrap">
+          <h2>Application mobile</h2>
+          <ion-label>
+            <ion-grid>
+              <ion-row class="ion-align-items-center">
+                <ion-col size="11">
+                  <h1>Android natif - Java</h1>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show1')"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-label>
+          <ion-text>
+            Conception, réalisation et maintenance de l’application métier de SOFTOUEST
+            à destination des huissiers de justice (SDK 27).
+          </ion-text>
+          <ion-text *ngIf="show1">
+            <ion-list>
+              <ion-item>
+                1- Réalisation du maquettage de l’application, rédaction des spécifications
+                techniques et fonctionnelles et du cahier des charges.
+              </ion-item>
+              <ion-item>
+                2- Réalisation des vues avec le design pattern MVC.
+              </ion-item>
+              <ion-item>
+                3- Mise en place de l’échange des données entre le progiciel et l’application
+                via le transfert d’un fichier XML en SSH (base de données du progiciel en COBOL),
+                enregistrement des données reçues sur une base SQlite (Doit pouvoir fonctionner
+                hors connexion).
+              </ion-item>
+              <ion-item>
+                4- Développement des processus asynchrones pour permettre les
+                connexions de synchronisation des données et de mise à jour de l’application.
+              </ion-item>
+              <ion-item>
+                5- Intégration de l’API Google Maps afin d’afficher les personnes qui ont des
+                coordonnées GPS connues.
+              </ion-item>
+              <ion-item>
+                6- Gestion des permissions afin d’utiliser des composants du terminal.
+                (Accès au GPS, aux fichiers internes/externes, effectuer un appel…).
+              </ion-item>
+            </ion-list>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-text slot="start">
+          Pro
+        </ion-text>
+        <ion-label class="ion-text-wrap">
+          <h2>Client-serveur</h2>
+          <ion-label>
+            <ion-grid>
+              <ion-row class="ion-align-items-center">
+                <ion-col size="11">
+                  <h1>JavaFx 8 - Java JDK 8</h1>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show2')"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-label>
+          <ion-text>
+            Participation à la migration d'un logiciel du COBOL en Java. Conception et écriture d'écrans et de
+            composants.
+          </ion-text>
+          <ion-text *ngIf="show2">
+            <ion-list>
+              <ion-item>
+                1- Conception et écriture de composant IHM et métier.
+              </ion-item>
+              <ion-item>
+                2- Réalisation de documentations techniques.
+              </ion-item>
+              <ion-item>
+                3- Mise en place de process asynchrone pour le chargement de données volumineuses et les traitements
+                longs.
+              </ion-item>
+            </ion-list>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-text slot="start">
+          Perso
+        </ion-text>
+        <ion-label class="ion-text-wrap">
+          <h2>Application mobile</h2>
+          <ion-label>
+            <ion-grid>
+              <ion-row class="ion-align-items-center">
+                <ion-col size="11">
+                  <h1>Android natif - Java</h1>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show3')"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-label>
+          <ion-text>
+            Participation à la migration d'un logiciel du COBOL en Java. Conception et écriture d'écrans et de
+            composants.
+          </ion-text>
+          <ion-text *ngIf="show3">
+            <ion-list>
+              <ion-item>
+                1- Conception et écriture de composant IHM et métier.
+              </ion-item>
+              <ion-item>
+                2- Réalisation de documentations techniques.
+              </ion-item>
+              <ion-item>
+                3- Mise en place de process asynchrone pour le chargement de données volumineuses et les traitements
+                longs.
+              </ion-item>
+            </ion-list>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

@@ -8,6 +8,7 @@ import { HomePage } from './home.page';
 import { PresentationComponent } from './presentation/presentation.component';
 import { FormationComponent } from './formations/formation.component';
 import { CompetenceComponent } from './competences/competence.component';
+import { ProjetsComponent } from './projets/projets.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { CompetenceComponent } from './competences/competence.component';
     HomePage,
     FormationComponent,
     PresentationComponent,
-    CompetenceComponent
+    CompetenceComponent,
+    ProjetsComponent
   ]
 })
 export class HomePageModule {}

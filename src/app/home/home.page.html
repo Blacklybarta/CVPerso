@@ -9,6 +9,7 @@
       <ion-item (click)="scrollTo(presentation)">Mon CSS</ion-item>
       <ion-item (click)="scrollTo(formation)">Mes formations</ion-item>
       <ion-item (click)="scrollTo(competences)">Mes compétences</ion-item>
+      <ion-item (click)="scrollTo(projets)">Mes projets</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -43,6 +44,11 @@
           <ion-col size-xs="12" size-sm="6" size-md="6" size-lg="4">
             <div #competences>
               <app-competence></app-competence>
+            </div>
+          </ion-col>
+          <ion-col size-xs="12" size-sm="6" size-md="6" size-lg="4">
+            <div #projets>
+              <app-projets></app-projets>
             </div>
           </ion-col>
         </ion-row>
