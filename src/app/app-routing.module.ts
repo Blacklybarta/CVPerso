@@ -8,6 +8,17 @@ const routes: Routes = [
     path: 'modal-avance',
     loadChildren: () => import('./home/competences/modal-avance/modal-avance.module').then( m => m.ModalAvancePageModule)
   },
+  {
+    path: 'modal-intermediaire',
+    loadChildren: () => import('./home/competences/modal-intermediaire/modal-intermediaire.module')
+    .then( m => m.ModalIntermediairePageModule)
+  },
+  {
+    path: 'modal-base',
+    loadChildren: () => import('./home/competences/modal-base/modal-base.module').then( m => m.ModalBasePageModule)
+  }
+
+
 
 ];
 
