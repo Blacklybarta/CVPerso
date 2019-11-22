@@ -1,5 +1,7 @@
 {
   "name": "ion-CV",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
