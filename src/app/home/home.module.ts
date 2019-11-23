@@ -9,6 +9,9 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { FormationComponent } from './formations/formation.component';
 import { CompetenceComponent } from './competences/competence.component';
 import { ProjetsComponent } from './projets/projets.component';
+import { InteretsComponent } from './interets/interets.component';
+import { FooterComponent } from './footer/footer.component';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @NgModule({
   imports: [
@@ -22,12 +25,15 @@ import { ProjetsComponent } from './projets/projets.component';
       }
     ])
   ],
+  providers:[InAppBrowser],
   declarations: [
     HomePage,
     FormationComponent,
     PresentationComponent,
     CompetenceComponent,
-    ProjetsComponent
+    ProjetsComponent,
+    InteretsComponent,
+    FooterComponent
   ]
 })
 export class HomePageModule {}

@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ModalAvancePageModule } from './home/competences/modal-avance/modal-avance.module';
 import { ModalIntermediairePageModule } from './home/competences/modal-intermediaire/modal-intermediaire.module';
 import { ModalBasePageModule } from './home/competences/modal-base/modal-base.module';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { ModalBasePageModule } from './home/competences/modal-base/modal-base.mo
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
