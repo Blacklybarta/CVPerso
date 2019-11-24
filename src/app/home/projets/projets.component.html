@@ -15,7 +15,10 @@
                   <h1>Android natif - Java</h1>
                 </ion-col>
                 <ion-col size="1">
-                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show1')"></ion-icon>
+                  <ion-icon size="large" color="success" *ngIf="!show1" name="add-circle-outline"
+                    (click)="visible('show1')"></ion-icon>
+                  <ion-icon size="large" color="danger" *ngIf="show1" name="remove-circle-outline"
+                    (click)="visible('show1')"></ion-icon>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -65,7 +68,10 @@
                   <h1>JavaFx 8 - Java JDK 8</h1>
                 </ion-col>
                 <ion-col size="1">
-                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show2')"></ion-icon>
+                  <ion-icon size="large" color="success" *ngIf="!show2" name="add-circle-outline"
+                    (click)="visible('show2')"></ion-icon>
+                  <ion-icon size="large" color="danger" *ngIf="show2" name="remove-circle-outline"
+                    (click)="visible('show2')"></ion-icon>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -100,7 +106,10 @@
                   <h1>Android natif - Java</h1>
                 </ion-col>
                 <ion-col size="1">
-                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show3')"></ion-icon>
+                  <ion-icon size="large" color="success" *ngIf="!show3" name="add-circle-outline"
+                    (click)="visible('show3')"></ion-icon>
+                  <ion-icon size="large" color="danger" *ngIf="show3" name="remove-circle-outline"
+                    (click)="visible('show3')"></ion-icon>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -130,7 +139,10 @@
                   <h1>IONIC - TypeScript</h1>
                 </ion-col>
                 <ion-col size="1">
-                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show4')"></ion-icon>
+                  <ion-icon size="large" color="success" *ngIf="!show4" name="add-circle-outline"
+                    (click)="visible('show4')"></ion-icon>
+                  <ion-icon size="large" color="danger" *ngIf="show4" name="remove-circle-outline"
+                    (click)="visible('show4')"></ion-icon>
                 </ion-col>
               </ion-row>
             </ion-grid>
