@@ -10,6 +10,7 @@ export class ProjetsComponent implements OnInit {
   public show1 = false;
   public show2 = false;
   public show3 = false;
+  public show4 = false;
 
   constructor() { }
 
@@ -36,6 +37,13 @@ export class ProjetsComponent implements OnInit {
           this.show3 = false;
         } else {
           this.show3 = true;
+        }
+        break;
+      case 'show4':
+        if (this.show4) {
+          this.show4 = false;
+        } else {
+          this.show4 = true;
         }
         break;
     }

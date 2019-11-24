@@ -11,7 +11,7 @@
           <ion-label>
             <ion-grid>
               <ion-row class="ion-align-items-center ion-text-wrap">
-                <ion-col size-xs="12" size-lg="12">
+                <ion-col size-xs="12" size-lg="12" color="success">
                   <h1>Android natif - Java</h1>
                 </ion-col>
                 <ion-col size="1">
@@ -115,6 +115,39 @@
               </ion-item>
               <ion-item>
                 2- Enregistrement des datas via Room.
+              </ion-item>
+            </ion-list>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label class="ion-text-wrap">
+          <h2>Application ionic - Perso</h2>
+          <ion-label>
+            <ion-grid>
+              <ion-row class="ion-align-items-center ion-text-wrap">
+                <ion-col size-xs="12" size-lg="12">
+                  <h1>IONIC - TypeScript</h1>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon size="large" name="add-circle-outline" (click)="visible('show4')"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-label>
+          <ion-text>
+            Création de mon CV virtuel.
+          </ion-text>
+          <ion-text *ngIf="show4">
+            <ion-list>
+              <ion-item>
+                1- Utilisation du framework IONIC.
+              </ion-item>
+              <ion-item>
+                2- Appel du service natif InAppBrowser pour le téléchargement de mon CV physique.
+              </ion-item>
+              <ion-item>
+                3- Utilisation de plusieurs composants tels que Modal, Alert, Menu.
               </ion-item>
             </ion-list>
           </ion-text>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { MenuController, AlertController } from '@ionic/angular';
+import { MenuController } from '@ionic/angular';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,7 @@ export class HomePage {
     fullscreen : 'yes',//Windows only    
 };
 
-  constructor(private menu: MenuController, private alertController: AlertController, private iab: InAppBrowser) { }
+  constructor(private menu: MenuController,private alertController: AlertController, private iab: InAppBrowser) { }
 
   openFirst() {
     this.menu.enable(true, 'first');
@@ -66,5 +67,4 @@ export class HomePage {
     let target = "_blank";
     this.iab.create(url,target,this.options);
 }
-
 }

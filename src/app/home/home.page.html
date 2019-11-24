@@ -6,11 +6,24 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item (click)="scrollTo(presentation)">Présentation</ion-item>
-      <ion-item (click)="scrollTo(formation)">Formations</ion-item>
-      <ion-item (click)="scrollTo(competences)">Compétences</ion-item>
-      <ion-item (click)="scrollTo(projets)">Projets</ion-item>
-      <ion-item (click)="scrollTo(interets)">Centre d'intérêts</ion-item>
+      <ion-item (click)="scrollTo(presentation)">
+        <ion-icon color="primary" name="person" size="medium"></ion-icon> - Présentation
+      </ion-item>
+      <ion-item (click)="scrollTo(formation)">
+        <ion-icon color="primary" name="ribbon" size="medium"></ion-icon> - Formations
+      </ion-item>
+      <ion-item (click)="scrollTo(competences)">
+        <ion-icon color="primary" name="laptop" size="medium"></ion-icon> - Compétences
+      </ion-item>
+      <ion-item (click)="scrollTo(projets)">
+        <ion-icon color="primary" name="images" size="medium"></ion-icon> - Projets
+      </ion-item>
+      <ion-item (click)="scrollTo(interets)">
+        <ion-icon color="primary" name="walk" size="medium"></ion-icon> - Centre d'intérêts
+      </ion-item>
+      <ion-item (click)="presentAlertDownLoadCV()">
+        <ion-icon color="primary" name="cloud-download" size="medium"></ion-icon> - Télécharger mon CV
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -26,9 +39,6 @@
       </ion-label>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="presentAlertDownLoadCV()" color="primary">
-        <ion-icon name="download" size="large"></ion-icon>
-      </ion-button>
       <ion-button>
         <a href="https://www.linkedin.com/in/jean-françois-poughon-android-java-developper" target="_blank">
           <ion-icon name="logo-linkedin" size="large"></ion-icon>
