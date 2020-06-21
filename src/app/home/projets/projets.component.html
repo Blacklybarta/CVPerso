@@ -7,12 +7,57 @@
     <ion-list>
       <ion-item>
         <ion-label class="ion-text-wrap">
-          <h2>Application mobile - Pro</h2>
+          <h1>Android - Kotlin</h1>
           <ion-label>
             <ion-grid>
               <ion-row class="ion-align-items-center ion-text-wrap">
                 <ion-col size-xs="12" size-lg="12" color="success">
-                  <h1>Android natif - Java</h1>
+                  <ion-text>
+                    Réalisation et maintenance d'une application de scanning de badges NFC
+                  </ion-text>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon size="large" color="success" *ngIf="!show5" name="add-circle-outline"
+                    (click)="visible('show5')"></ion-icon>
+                  <ion-icon size="large" color="danger" *ngIf="show5" name="remove-circle-outline"
+                    (click)="visible('show5')"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-label>
+          <ion-text *ngIf="show5">
+            <ion-list>
+              <ion-item>
+                1- Réalisation des vues avec le design pattern MVP.
+              </ion-item>
+              <ion-item>
+                2- Mise en place de l’échange des données entre l'application et les badges via NFC.
+              </ion-item>
+              <ion-item>
+                3- Enregistrement des tags dans une base de données interne (Room).
+              </ion-item>
+              <ion-item>
+                4- Synchronisation des badges enregistés avec le serveur REST.
+              </ion-item>
+              <ion-item>
+                5- Gestion via Settings des différents paramètres de l'application.
+                (adresse serveur, PORT, délai de syncronisation)
+              </ion-item>
+            </ion-list>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label class="ion-text-wrap">
+          <h1>Android - Java</h1>
+          <ion-label>
+            <ion-grid>
+              <ion-row class="ion-align-items-center ion-text-wrap">
+                <ion-col size-xs="12" size-lg="12" color="success">
+                  <ion-text>
+                    Conception, réalisation et maintenance de l’application métier de SOFTOUEST
+                    à destination des huissiers de justice (SDK 27).
+                  </ion-text>
                 </ion-col>
                 <ion-col size="1">
                   <ion-icon size="large" color="success" *ngIf="!show1" name="add-circle-outline"
@@ -23,10 +68,6 @@
               </ion-row>
             </ion-grid>
           </ion-label>
-          <ion-text>
-            Conception, réalisation et maintenance de l’application métier de SOFTOUEST
-            à destination des huissiers de justice (SDK 27).
-          </ion-text>
           <ion-text *ngIf="show1">
             <ion-list>
               <ion-item>
@@ -60,12 +101,15 @@
       </ion-item>
       <ion-item>
         <ion-label class="ion-text-wrap">
-          <h2>Client-serveur - Pro</h2>
+          <h1>JavaFx 8</h1>
           <ion-label>
             <ion-grid>
               <ion-row class="ion-align-items-center ion-text-wrap">
                 <ion-col size-xs="12" size-lg="12">
-                  <h1>JavaFx 8 - Java JDK 8</h1>
+                  <ion-text>
+                    Participation à la migration d'un logiciel du COBOL en Java. Conception et écriture d'écrans et de
+                    composants.
+                  </ion-text>
                 </ion-col>
                 <ion-col size="1">
                   <ion-icon size="large" color="success" *ngIf="!show2" name="add-circle-outline"
@@ -76,10 +120,6 @@
               </ion-row>
             </ion-grid>
           </ion-label>
-          <ion-text>
-            Participation à la migration d'un logiciel du COBOL en Java. Conception et écriture d'écrans et de
-            composants.
-          </ion-text>
           <ion-text *ngIf="show2">
             <ion-list>
               <ion-item>
@@ -98,12 +138,14 @@
       </ion-item>
       <ion-item>
         <ion-label class="ion-text-wrap">
-          <h2>Application mobile - Perso</h2>
-          <ion-label>
+          <h1>Android - Java (Perso)</h1>
+        <ion-label>
             <ion-grid>
               <ion-row class="ion-align-items-center ion-text-wrap">
                 <ion-col size-xs="12" size-lg="12">
-                  <h1>Android natif - Java</h1>
+                  <ion-text>
+                    Création d'une application de type WIKI sur Star-Wars.
+                  </ion-text>
                 </ion-col>
                 <ion-col size="1">
                   <ion-icon size="large" color="success" *ngIf="!show3" name="add-circle-outline"
@@ -114,9 +156,6 @@
               </ion-row>
             </ion-grid>
           </ion-label>
-          <ion-text>
-            Création d'une application de type WIKI sur Star-Wars.
-          </ion-text>
           <ion-text *ngIf="show3">
             <ion-list>
               <ion-item>
@@ -131,12 +170,14 @@
       </ion-item>
       <ion-item>
         <ion-label class="ion-text-wrap">
-          <h2>Application ionic - Perso</h2>
+          <h1>IONIC (Perso)</h1>
           <ion-label>
             <ion-grid>
               <ion-row class="ion-align-items-center ion-text-wrap">
                 <ion-col size-xs="12" size-lg="12">
-                  <h1>IONIC - TypeScript</h1>
+                  <ion-text>
+                    Création de mon CV virtuel.
+                  </ion-text>
                 </ion-col>
                 <ion-col size="1">
                   <ion-icon size="large" color="success" *ngIf="!show4" name="add-circle-outline"
@@ -147,9 +188,6 @@
               </ion-row>
             </ion-grid>
           </ion-label>
-          <ion-text>
-            Création de mon CV virtuel.
-          </ion-text>
           <ion-text *ngIf="show4">
             <ion-list>
               <ion-item>

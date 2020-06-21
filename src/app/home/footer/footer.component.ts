@@ -45,7 +45,7 @@ export class FooterComponent implements OnInit {
         }, {
           text: 'Ouvrir',
           handler: () => {
-            this.openWithInAppBrowser('https://jefpoughon.com/CVJeanFrancoisPoughonDeveloppeurAndroid.pdf');
+            this.openWithInAppBrowser('https://jefpoughon.com/CVJeanFrancoisPoughonDevAndroidCAFR.pdf');
           }
         }
       ]
